@@ -2,6 +2,10 @@
 
 const greet = require('./lib/greet.js');
 const math = require('./lib/arithmetic.js');
-console.log(greet('JOHN'));
-console.log(math.add(1,3)); // 4
-console.log(math.subtract(1,3)); // -2
+var faker = require('faker');
+var firstRandom = faker.random.number();
+var secondRandom = faker.random.number();
+var randomName = faker.name.findName();
+console.log(greet(randomName));
+console.log(math.add(firstRandom, secondRandom));
+console.log(math.subtract(firstRandom, secondRandom));

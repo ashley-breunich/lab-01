@@ -38,4 +38,40 @@ Create a NodeJS module in the `lib` directory named `greet.js`.  This module sho
 
 
 ### Documentation
-In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
+
+###### Add
+Airty: 2
+Data-Type: Number
+Output-Valid: Number
+Output-Invalid: Null
+Time Spent: 40 Minutes
+
+###### Subtract 
+Airty: 2
+Data-Type: Number
+Output-Valid: Number
+Output-Invalid: Null
+Time Spent: 10 Minutes
+
+###### Multiply
+Airty: 2
+Data-Type: Number
+Output-Valid: Number
+Output-Invalid: Null
+Time Spent: 10 Minutes
+
+###### Divide 
+Airty: 2
+Data-Type: Number
+Output-Valid: Number
+Output-Invalid: Null
+Time Spent: 10 Minutes
+
+###### Hello 
+Airty: 1
+Data-Type: String
+Output-Valid: String
+Output-Invalid: Null
+Time Spent: 30 Mintues
+
+This assignment took my around 3 hours to complete in total. I still need to figure out the: "Refactor the add, subtract, multiply to allow for an array of params so that you can do deeper calculations" part. I didn't have time to get to that yet. 

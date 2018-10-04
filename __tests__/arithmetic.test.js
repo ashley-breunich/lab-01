@@ -25,7 +25,7 @@ describe('arithmetic.add()', () => {
   });
 
   it('does not allow strings', () => {
-    let message = arithmetic.add('45', '30');
+    let message = arithmetic.add('55', '30');
     expect(message).toBeNull();
   });
 

@@ -24,6 +24,11 @@ describe('arithmetic.add()', () => {
     expect(message).toBeNull();
   });
 
+  it('does not allow arrays', () => {
+    let message = arithmetic.add([], []);
+    expect(message).toBeNull();
+  });
+
   it('does not allow strings', () => {
     let message = arithmetic.add('55', '30');
     expect(message).toBeNull();
@@ -54,6 +59,11 @@ describe('arithmetic.subtract()', () => {
     expect(message).toBeNull();
   });
 
+  it('does not allow arrays', () => {
+    let message = arithmetic.subtract([], []);
+    expect(message).toBeNull();
+  });
+
   it('does not allow strings', () => {
     let message = arithmetic.subtract('45', '30');
     expect(message).toBeNull();
@@ -76,6 +86,11 @@ describe('arithmetic.multiply()', () => {
   
   it('does not allow booleans', () => {
     let message = arithmetic.multiply(false, false);
+    expect(message).toBeNull();
+  });
+
+  it('does not allow arrays', () => {
+    let message = arithmetic.multiply([], []);
     expect(message).toBeNull();
   });
   
@@ -103,9 +118,24 @@ describe('arithmetic.divide()', () => {
     console.log(message);
     expect(message).toEqual(expectedOutput);
   });
+
+  it('neither input can equal zero', () => {
+    let message = arithmetic.divide(testNumber1, 0);
+    expect(message).toBeNull();
+  });
+
+  it('neither input can equal zero', () => {
+    let message = arithmetic.divide(0, testNumber2);
+    expect(message).toBeNull();
+  });
     
   it('does not allow booleans', () => {
     let message = arithmetic.divide(false, false);
+    expect(message).toBeNull();
+  });
+
+  it('does not allow arrays', () => {
+    let message = arithmetic.divide([], []);
     expect(message).toBeNull();
   });
     
